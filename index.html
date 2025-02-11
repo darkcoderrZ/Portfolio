@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./port/assets/fevicons/favicon.ico" type="image/x-icon">
+    <title>Portfolio - Shobhit Chaudhary</title>
+    <link rel="stylesheet" href="./port/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <main id="main" class="bg-secondary text-primary overflow-hidden">
+
+        <!-- background imgage  -->
+        <img src="./port/assets/patternTwo.jpg" class="absolute h-[100svh] sm:h-[742px]" alt="pattern">
+
+        <!-- scroller menu  -->
+        <div id="scrollMenu" class="menu sm:hidden absolute right-0 down h-[100svh] bg-primary px-4 text-gray-500 font-medium font-fira transition-all border-l-4 border-moonstone">
+            <div class="h-[100%] flex flex-col justify-center">
+                <span class="flex gap-12 flex-col">
+                    <a href="#about" class="connect relative z-20">About</a>
+                    <a href="#projects" class="connect relative z-20">Projects</a>
+                    <a href="#contact" class="connect relative z-20">Contact</a>
+                </span>
+            </div>
+        </div>
+
+        <!-- my cursor  -->
+        <div id="myCursor" class="hidden lg:block w-12 h-12 rounded-full bg-lapis-blue fixed translate-x-[-50%] translate-y-[-50%] overflow-hidden"></div>
+
+        <!-- nav and header wraper  -->
+        <div class="w-[100%] h-[100svh] sm:h-[742px]">
+
+            <!-- navbar  -->
+            <nav class="w-[100%] h-[8svh] sm:h-[12%] max-w-screen-xl mx-auto flex justify-between items-center px-2 sm:px-6 relative z-10">
+
+                <!-- logo  -->
+                <span class="logo"><img src="./port/assets/logo.png" class="w-[44px] sm:w-[58px] md:w-[68px] brightness-110" alt="logo"></span>
+
+                <!-- desktop menu  -->
+                <div>
+                    <ul class="gap-12 text-[1.1em] text-gray-400 font-fira hidden sm:flex pt-6">
+                        <li class="menuList cursor-pointer hover:text-primary ease-in"><a href="#about">About me</a></li>
+                        <li class="menuList cursor-pointer hover:text-primary ease-in"><a href="#projects">Projects</a></li>
+                        <!-- <li class="menuList cursor-pointer hover:text-primary ease-in"><a href="#services">Services</a></li> -->
+                        <li class="menuList cursor-pointer hover:text-primary ease-in"><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- humber menu  -->
+                <div id="humburger" class="sm:hidden icon nav-icon-6">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </nav>
+            
+            <!-- hero section  -->
+            <header class="w-[100%] h-[92svh] sm:h-[88%] max-w-screen-xl mx-auto flex flex-col md:flex-row relative z-10">
+                
+                <!-- scroll button  -->
+                <a href="#about" class="absolute bottom-[20px] right-[45%] md:right-[28px]"><div class="border border-gray-400 text-gray-400 rounded-full px-1 sm:px-2 py-4 sm:py-6 text-lg sm:text-2xl"><i class="fa-solid fa-chevron-down"></i></div></a>
+
+                <!-- left hero section  -->
+                <div class="w-[100%] lg:w-[34%] pt-[140px] md:pt-[120px] lg:pt-[140px] flex justify-center relative">
+
+                    <!-- connect button  -->
+                    <div id="con" class="sm:hidden border border-gray-400 connect absolute px-1 py-4 font-fira text-gray-400 cursor-pointer left-1 bottom-[24px] text-base">Connect</div>
+
+                    <!-- scroller connect  -->
+                    <div class="hide connect-icon absolute px-2 text-gray-400 left-1 bottom-0">
+                        <div class="flex flex-col gap-4 text-2xl">
+                            <a href="https://www.linkedin.com/in/shobhit-chaudhary-63a58225b/" target="_blank"><i class="icons cursor-pointer hover:text-primary fa-brands fa-linkedin ease-in"></i></a>
+
+                            <a href="https://github.com/darkcoderrZ" target="_blank"><i class="icons cursor-pointer hover:text-primary fa-brands fa-github ease-in"></i></a>
+
+                            <!-- <a href="https://www.instagram.com/ashish_gupta_003/" target="_blank"><i class="icons cursor-pointer hover:text-primary fa-brands fa-instagram ease-in"></i></a>
+
+                            <a href="https://twitter.com/AshishK63485825/with_replies" target="_blank"><i class="icons cursor-pointer hover:text-primary fa-brands fa-twitter ease-in"></i></a>
+
+                            <a href="https://www.facebook.com/profile.php?id=100013353915022" target="_blank"><i class="icons cursor-pointer hover:text-primary fa-brands fa-facebook ease-in"></i></a> -->
+                        </div>
+                    </div>
+
+                    <!-- profile image  -->
+                    <div class="w-[160px] h-[160px] md:w-[220px] md:h-[220px] lg:w-[320px] lg:h-[320px] rounded-full"><img src="./port/assets/profile.png"  class="w-[100%] rounded-full" alt="profile"></div>   
+                </div>
+
+                <!-- right hero section  -->
+                <div class="w-[100%] lg:w-[66%] pt-[54px] sm:pt-[140px] lg:pt-[150px]">
+                    <div class="w-[100%] max-sm:flex flex-col items-center">
+                        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-fira mb-4 sm:mb-4 lg:mb-6 flex items-center"><img src="./port/assets/wavingHand.gif" alt="helloHand" class="w-[28px] md:w-[48px]"><span>Hello, I am Shobhit</span></h1>
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-mont font-bold mb-1 lg:mb-2 pl-2 max-sm:text-center">MERN Stack Developer.</h2>
+                        <p class=" text-sm sm:text-base lg:text-lg font-fira text-primary pl-[10px] lg:tracking-wide">Develop and Design Responsive Applications.</p>
+                        <div class="w-[100%] lg:flex gap-14 hidden md:pt-10 lg:pt-16 text-4xl text-gray-400 pl-[14px]">
+                            <a href="https://www.linkedin.com/in/shobhit-chaudhary-63a58225b/" target="_blank"><i class="icons cursor-pointer hover:text-primary fa-brands fa-linkedin ease-in"></i></a>
+
+                            <a href="https://github.com/darkcoderrZ" target="_blank"><i class="icons cursor-pointer hover:text-primary fa-brands fa-github ease-in"></i></a>
+
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!-- loaderpage  -->
+        <div id="myLoader" class="absolute z-20 top-0 w-[100%] h-[100svh] overflow-hidden">
+
+            <div id="upperLoader" class="w-[100%] h-[50svh] bg-primary relative overflow-hidden">
+                <span id="upperText" class="font-mont text-[4em] sm:text-[6em] lg:text-[12em] xl:[16em] text-secondary font-bold absolute left-[50%] bottom-0 translate-x-[-50%] translate-y-[50%]">LOADING</span>
+            </div>
+
+            <div id="lowerLoader" class="w-[100%] h-[50svh] bg-primary relative overflow-hidden outline outline-1 outline-powder-blue">
+                <span id="lowerText" class="font-mont text-[4em] sm:text-[6em] lg:text-[12em] xl:[16em] text-secondary font-bold absolute left-[50%] top-0 translate-x-[-50%] translate-y-[-50%] ">LOADING</span>
+            </div>
+
+            <div id="loader" class="w-[100vw] h-[8px] sm:h-[12px] lg:h-[18px] xl:h-[22] bg-secondary absolute z-10 top-[50%] translate-y-0 left-[-100%] "></div>
+
+        </div>
+
+        <!-- other sections  -->
+        <section class="w-[100%] bg-secondary hidden relative">
+
+            <!-- running scroller  -->
+            <!-- <div id="scroller" class="bg-moonstone py-3 sm:py-7 text-nowrap mb-8 md:mb-16">
+                <div id="scrollText" class="text-xl sm:text-4xl font-fira font-medium tracking-wide text-secondary antialiased"><span>Code Like a Pro, Inspire like a Visionary.</span><span>-</span><span>Code Like a Pro, Inspire like a Visionary.</span><span>-</span><span>Code Like a Pro, Inspire like a Visionary.</span><span>-</span></div>
+                <div id="scrollText" class="text-xl sm:text-4xl font-fira font-medium sm:font-semibold tracking-wide text-secondary antialiased"><span>Code Like a Pro, Inspire like a Visionary.</span><span>-</span><span>Code Like a Pro, Inspire like a Visionary.</span><span>-</span><span>Code Like a Pro, Inspire like a Visionary.</span><span>-</span></div>
+            </div> -->
+
+            <!-- about section  -->
+            <div id="about">
+                <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row py-8 md:py-16 max-sm:gap-4">
+                    <div class="sm:flex-[60%] pl-2 pr-6 sm:pl-6 max-sm:order-2">
+                        <p class="tag text-lapis-blue text-lg font-fira py-4">about</p>
+                        <div class="pl-4 sm:pl-8 sm:pr-8">
+                            <h2 class="text-base sm:text-xl font-fira text-justify">My full name is Shobhit Chaudhary, I am from Palwal (Haryana), India.<br/><br/> I have completed my Bachelor's in Computer Application from Chandigarh University. Along with that I am good at Data Structures and Algorithms, Learning New Technologies, and, My key Skills are:</h2>
+                            <div class="py-8 sm:py-12 flex gap-3 sm:gap-4 flex-wrap">
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">JavaScript</div>
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">HMTL5</div>
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">CSS3</div>
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">TailwindCss</div>
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">BootStrap</div>
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">C</div>
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">Java</div>
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">Data-Structures</div>
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">Git/GitHub</div>
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">Responsive Web Designing</div>
+                                <div class="px-3 sm:px-6 py-[2px] sm:py-2 rounded-full border border-gray-500 inline-block font-fira text-base sm:text-lg">React</div>
+                            </div>
+                            <a href="./port/assets/Resume.pdf" download="Resume" target="_blank"><button class="text-base sm:text-lg font-fira px-3 py-[3px] sm:px-6 sm:py-2 rounded-full bg-moonstone mb-2 brightness-[90%] hover:brightness-[100%] shadow-xl ease-in">Download Resume</button></a>
+                        </div>
+                        <p class="tag text-lapis-blue text-lg font-fira py-4">/about</p>
+                    </div>
+
+                    <div class="flex-[40%] max-sm:px-8 max-sm:py-4 sm:pb-16 flex items-center justify-center">
+                        <img src="./port/assets/Hand coding-amico.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- project section  -->
+            <div id="projects">
+                <div class="max-w-screen-xl mx-auto py-8 sm:py-16 px-2 sm:px-6">
+                    <p class="tag text-lapis-blue text-lg font-fira">projects</p>
+                    <div class="py-6 px-4 sm:px-8 flex flex-col gap-6 sm:gap-10 relative">
+                        <img src="./port/assets/patternThree.png" class="absolute top-[-28px] sm:top-[-38px] left-[-20px] sm:left-[-28px] sm:w-[240px]" alt="pattern">
+
+                        <img src="./port/assets/patternThree.png" class="absolute bottom-[-28px] sm:bottom-[-38px] right-[-20px] sm:right-[-28px] sm:w-[240px] rotate-[180deg]" alt="pattern">
+
+                        <div class="project1 border border-lapis-blue py-2 sm:py-8 px-2 sm:px-4 relative overflow-hidden">
+                            <div class="projectOneSlider-content">
+                                <h2 class="text-lg md:text-xl font-mont font-medium">Wanderlust</h2>
+                                <p class="text-sm md:text-base pt-1 pb-4 font-fira antialiased">A full-stack web application that replicates Airbnb's core functionalities, allowing
+                                    users to browse, and list properties.</p>
+                                <div class="flex gap-4 sm:gap-6 text-base sm:text-lg font-medium font-fira text-lapis-blue">
+                                    <a href="https://github.com/darkcoderrZ/wanderlust" target="_blank" class="hover:underline">GitHub Link</a>
+                                </div>
+                            </div>
+                            <div class="projectOneInnerSlider h-[100%] w-[100%] bg-lapis-blue absolute top-0 left-0"></div>
+                            <div class="projectOneOuterSlider h-[100%] w-[100%] bg-moonstone absolute top-0 left-0"></div>
+                        </div>
+
+                        <!-- <div class="border border-lapis-blue py-2 sm:py-8 px-2 sm:px-4 relative overflow-hidden">
+                            <div class="projectTwoSlider-content">
+                                <h2 class="text-lg md:text-xl font-mont font-medium">Design Clones</h2>
+                                <p class="text-sm md:text-base pt-1 pb-4 font-fira antialiased">Design Clones showcases multiple replicated interfaces such as YouTube, Slack, and more. Crafted using HTML, CSS, and Tailwind CSS, it demonstrates diverse design possibilities and coding proficiency.</p>
+                                <div class="flex gap-4 sm:gap-6 text-base sm:text-lg font-medium font-fira text-lapis-blue">
+                                    <a href="https://github.com/Ashish473797/Design-Clones" class="hover:underline" target="_blank">GitHub Link</a>
+                                    <a href="https://ashish473797.github.io/Design-Clones/" class="hover:underline" target="_blank">Live Link</a>
+                                </div>
+                            </div>
+                            <div class="projectTwoInnerSlider h-[100%] w-[100%] bg-lapis-blue absolute top-0 left-0"></div>
+                            <div class="projectTwoOuterSlider h-[100%] w-[100%] bg-moonstone absolute top-0 left-0"></div>
+                        </div>
+
+                        <div class="border border-lapis-blue py-2 sm:py-8 px-2 sm:px-4 relative overflow-hidden">
+                            <div class="projectThreeSlider-content">
+                                <h2 class="text-lg md:text-xl font-mont font-medium">Random-Quiz App</h2>
+                                <p class="text-sm md:text-base pt-1 pb-4 font-fira antialiased">Experience randomness with our Quiz app! Seamlessly integrated with an API, it fetches diverse questions on-the-fly. Engaging HTML, CSS, and JavaScript create an interactive and dynamic user experience.</p>
+                                <div class="flex gap-4 sm:gap-6 text-base sm:text-lg font-medium font-fira text-lapis-blue">
+                                    <a href="https://github.com/Ashish473797/Mini-Projects/tree/master/07-Quiz-App" target="_blank" class="hover:underline">GitHub Link</a>
+                                    <a href="https://qiux.netlify.app/" target="_blank" class="hover:underline">Live Link</a>
+                                </div>
+                            </div>
+                            <div class="projectThreeInnerSlider h-[100%] w-[100%] bg-lapis-blue absolute top-0 left-0"></div>
+                            <div class="projectThreeOuterSlider h-[100%] w-[100%] bg-moonstone absolute top-0 left-0"></div>
+                        </div> -->
+
+                        <!-- <div class="border border-lapis-blue py-2 sm:py-8 px-2 sm:px-4 relative overflow-hidden">
+                            <div class="projectFourSlider-content">
+                                <h2 class="text-lg md:text-xl font-mont font-medium">Todo-List App</h2>
+                                <p class="text-sm md:text-base pt-1 pb-4 font-fira antialiased">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum sint blanditiis fugit!</p>
+                                <div class="flex gap-4 sm:gap-6 text-base sm:text-lg font-medium font-fira text-lapis-blue">
+                                    <a href="" class="hover:underline">GitHub Link</a>
+                                    <a href="" class="hover:underline">Live Link</a>
+                                </div>
+                            </div>
+                            <div class="projectFourInnerSlider h-[100%] w-[100%] bg-lapis-blue absolute top-0 left-0"></div>
+                            <div class="projectFourOuterSlider h-[100%] w-[100%] bg-moonstone absolute top-0 left-0"></div>
+                        </div> -->
+
+                        <!-- <div class="border border-lapis-blue py-2 sm:py-8 px-2 sm:px-4 relative overflow-hidden">
+                            <div class="projectFiveSlider-content">
+                                <h2 class="text-lg md:text-xl font-mont font-medium">Tic-Tac-Toe Game</h2>
+                                <p class="text-sm md:text-base pt-1 pb-4 font-fira antialiased">A console-based Tic Tac Toe game implemented in C/C++. Players take turns marking X or O on a 3x3 grid. The first to form a row, column, or diagonal wins.</p>
+                                <div class="flex gap-4 sm:gap-6 text-base sm:text-lg font-medium font-fira text-lapis-blue">
+                                    <a href="https://github.com/Ashish473797/Cpp-BootCamp/tree/master/Projects/Project%202%20in%20C" target="_blank" class="hover:underline">GitHub Link</a>
+                                </div>
+                            </div>
+                            <div class="projectFiveInnerSlider h-[100%] w-[100%] bg-lapis-blue absolute top-0 left-0"></div>
+                            <div class="projectFiveOuterSlider h-[100%] w-[100%] bg-moonstone absolute top-0 left-0"></div>
+                        </div> -->
+                        
+
+                    </div>
+                    <p class="tag text-lapis-blue text-lg font-fira">/projects</p>
+                </div>
+            </div>
+
+            <!-- contact section  -->
+            <div id="contact">
+                <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row pt-8 md:py-16 max-sm:gap-4">
+                    <div class="sm:flex-[55%] pl-2 pr-6 sm:pl-6">
+                        <p class="tag text-lapis-blue text-lg font-fira py-4">contact</p>
+                        <div class="pl-4 sm:pl-8 sm:pr-8 py-6 sm:py-12">
+                            <form id="contactForm" class="flex flex-col gap-4 sm:gap-6 font-mont">
+
+                                <div>
+                                    <label for="name" class="text-sm sm:text-base">Your Name</label><br>
+                                    <input type="text" id="name" name="name" required class="w-[100%] text-secondary text-base sm:text-lg py-1 sm:py-2 rounded-md sm:rounded-lg px-2 font-medium"><br>
+                                </div>
+                        
+                                <div>
+                                    <label for="email" class="text-sm sm:text-base">Your Email</label><br>
+                                    <input type="email" id="email" name="email" required class="w-[100%] text-secondary text-base sm:text-lg py-1 sm:py-2 rounded-md sm:rounded-lg px-2 font-medium"><br>
+                                </div>
+                        
+                                <div>
+                                    <label for="message" class="text-sm sm:text-base">Message</label><br>
+                                    <textarea id="message" name="message" rows="4" required class="w-[100%] text-secondary text-base sm:text-lg py-1 sm:py-2 rounded-md sm:rounded-lg px-2 font-medium"></textarea><br>
+                                </div>
+                        
+                                <input type="submit" value="Send Message" class="w-[100%] text-primary bg-moonstone text-base sm:text-lg py-1 sm:py-2 rounded-md sm:rounded-lg px-2 font-medium brightness-[90%] hover:brightness-[100%] cursor-pointer">
+                            </form>
+                        </div>
+                        <p class="tag text-lapis-blue text-lg font-fira max-sm:pt-4 sm:py-4">/contact</p>
+                    </div>
+
+                    <div class="flex-[45%] max-sm:px-8 max-sm:pt-4 flex items-center justify-center sm:py-6 sm:px-6">
+                        <img src="./port/assets/Mailbox-bro.png" alt="message" class="message">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- footer section  -->
+            <footer class="border-t pb-4 pt-8 sm:pb-6 sm:pt-16 flex flex-col justify-center items-center gap-2 sm:gap-4">
+                <img src="./port/assets/logo.png" class="w-[24px] sm:w-[42px]" alt="logo">
+                <p class="text-xs sm:text-sm text-gray-400">Shobhit Chaudhary © 2025</p>
+                <div class="w-[100%] flex gap-6 sm:gap-8 text-base sm:text-xl text-gray-400 justify-center">
+                    <a href="https://www.linkedin.com/in/shobhit-chaudhary-63a58225b/" target="_blank"><i class="icons cursor-pointer hover:text-primary fa-brands fa-linkedin ease-in"></i></a>
+
+                    <a href="https://github.com/darkcoderrZ" target="_blank"><i class="icons cursor-pointer hover:text-primary fa-brands fa-github ease-in"></i></a>
+                </div>
+            </footer>
+
+        </section>
+        
+    </main>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./port/animation.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./port/script.js"></script>
+    
+</body>
+</html>
